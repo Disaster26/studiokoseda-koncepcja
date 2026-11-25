@@ -1,0 +1,468 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex, nofollow" data-podglad>
+<title>Fryzjer Gdynia - Studio Fryzjerskie Koseda | Witawa, Chylonia, barbershop</title>
+<meta name="description" content="Studio Fryzjerskie Maria Koseda w Gdyni od 1992 roku. Salony w Witawie (ul. Wielkokacka 2) i Chyloni (ul. Gniewska 21), barbershop, koloryzacje, przedłużanie i zagęszczanie włosów.">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="fonts/urbanist-rdzen.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="img/salon-chylonia-wejscie.webp" as="image" media="(min-width:900px)" fetchpriority="high">
+<link rel="preload" href="img/salon-chylonia-m.webp" as="image" media="(max-width:899px)" fetchpriority="high">
+<style>
+@font-face{font-family:Urbanist;src:url(fonts/urbanist-rdzen.woff2) format("woff2");font-weight:400 800;font-display:swap;unicode-range:U+0020-007E,U+00A0,U+00A9,U+00B7,U+00D3,U+00F3,U+2013,U+2019,U+201D,U+201E,U+2026}
+@font-face{font-family:Urbanist;src:url(fonts/urbanist-pl.woff2) format("woff2");font-weight:400 800;font-display:swap;unicode-range:U+0104-0107,U+0118-0119,U+0141-0144,U+015A-015B,U+0179-017C}
+:root{--fiolet:#68307C;--fiolet-g:#4C1F5C;--limonka:#E3E249;--tekst:#1D1922;--szary:#5E5866;--tlo2:#F2F1F5;--ciemne:#1E1922;--linia:#DEDBE3;--max:1240px}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:76px}
+body{margin:0;font:17px/1.6 Urbanist,system-ui,"Segoe UI",sans-serif;color:var(--tekst);background:#fff;-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+h1,h2,h3{line-height:1.12;margin:0;font-weight:700;letter-spacing:-.01em}
+h2{font-size:clamp(30px,3.4vw,46px)}
+h3{font-size:22px}
+p{margin:0 0 1em}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:54px;padding:0 30px;border-radius:8px;font:700 17px/1 Urbanist,sans-serif;text-decoration:none;border:0;cursor:pointer;transition:transform .15s ease,background .2s}
+.btn:active{transform:scale(.97)}
+.btn-l{background:var(--limonka);color:var(--fiolet-g)}
+.btn-l:hover{background:#EFEE6A}
+.btn-f{background:var(--fiolet);color:#fff}
+.btn-f:hover{background:var(--fiolet-g)}
+
+/* naglowek */
+.top{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--linia)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:68px;max-width:1500px}
+.logo{display:block;width:150px}
+.logo svg{width:100%;height:auto;display:block}
+.menu{display:flex;gap:30px;align-items:center}
+.menu a{text-decoration:none;font-weight:600;font-size:16px;color:var(--tekst);padding:6px 0;border-bottom:2px solid transparent}
+.menu a:hover{border-color:var(--limonka)}
+.menu .tel{display:inline-flex;align-items:center;gap:8px;background:var(--fiolet);color:#fff;padding:10px 18px;border-radius:8px;border:0}
+.menu .tel:hover{background:var(--fiolet-g)}
+.burger{display:none;background:none;border:0;width:46px;height:46px;cursor:pointer;padding:10px}
+.burger span{display:block;height:2px;background:var(--fiolet);margin:6px 0;transition:transform .2s,opacity .2s}
+
+/* pierwszy ekran */
+.hero{display:grid;grid-template-columns:1fr min(58vw,1100px);grid-template-rows:minmax(0,1fr);height:clamp(600px,calc(100svh - 69px),880px);background:var(--fiolet);color:#fff;overflow:hidden}
+.hero-txt{position:relative;display:flex;flex-direction:column;justify-content:center;padding:48px clamp(24px,5vw,90px);max-width:none}
+.hero-txt>*{position:relative;max-width:560px}
+.hero-txt>.pasmo-duze{position:absolute;right:-60px;top:-40px;width:260px;height:auto;opacity:.16;max-width:none}
+.hero h1{font-size:clamp(34px,3.6vw,58px);font-weight:700;margin-bottom:22px}
+.hero p{font-size:clamp(17px,1.25vw,20px);color:#EDE3F1;margin:0;max-width:500px}
+.hero .cta{margin-top:32px;display:flex;flex-direction:column;align-items:flex-start;gap:18px}
+.hero .salony-tel{display:flex;flex-wrap:wrap;gap:6px 26px;font-size:16px;color:#EDE3F1}
+.hero .salony-tel a{color:#fff;font-weight:700;text-decoration:none;border-bottom:1px solid rgba(227,226,73,.6)}
+.kolaz{display:grid;grid-template-columns:46fr 54fr;grid-template-rows:minmax(0,1fr) minmax(0,1fr);gap:6px;background:var(--fiolet);height:100%;min-height:0}
+.kolaz figure{margin:0;overflow:hidden;position:relative;min-height:0}
+.kolaz figure:first-child{grid-row:1/3}
+.kolaz img{width:100%;height:100%;object-fit:cover}
+
+/* linia ciecia z logo */
+.ciecie{display:flex;align-items:center;gap:14px;margin:18px 0 0}
+.ciecie i{display:block;height:2px;width:64px;background:var(--limonka)}
+.ciecie svg{width:14px;height:20px;flex:none}
+
+section{padding:clamp(64px,8vw,112px) 0}
+.sekcja-tytul{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;margin-bottom:40px;flex-wrap:wrap}
+.sekcja-tytul p{max-width:520px;color:var(--szary);margin:0}
+
+/* o nas */
+.onas .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(32px,6vw,90px);align-items:center}
+.onas .lead{font-size:clamp(19px,1.5vw,22px);line-height:1.5;color:var(--tekst)}
+.onas p{color:#3B3542}
+.onas .podpis{font-weight:700;color:var(--fiolet);margin-top:8px}
+.onas .zdj{display:grid;grid-template-columns:1fr 1fr;gap:10px;align-items:end}
+.onas .zdj img{width:100%;aspect-ratio:2/3;object-fit:cover;border-radius:4px}
+.onas .zdj img:last-child{margin-bottom:48px}
+.marki{display:flex;flex-wrap:wrap;gap:10px 28px;margin-top:26px;padding-top:22px;border-top:1px solid var(--linia);color:var(--szary);font-size:15px}
+.marki b{color:var(--tekst);font-weight:700}
+
+/* oferta */
+.oferta{background:var(--tlo2)}
+.oferta-uklad{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(32px,5vw,80px);align-items:start}
+.oferta-zdj{position:sticky;top:96px}
+.oferta-zdj img{width:100%;max-width:480px;aspect-ratio:1;object-fit:cover;border-radius:4px}
+.oferta-zdj p{font-size:15px;color:var(--szary);margin-top:12px}
+.usluga{display:grid;grid-template-columns:28px 1fr;gap:4px 16px;padding:26px 0;border-top:1px solid var(--linia)}
+.usluga:last-child{border-bottom:1px solid var(--linia)}
+.usluga svg{width:16px;height:24px;margin-top:2px}
+.usluga h3{grid-column:2}
+.usluga p,.usluga ul{grid-column:2;margin:6px 0 0;color:#3B3542}
+.usluga ul{padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:6px 18px;font-weight:600;color:var(--fiolet)}
+
+/* metamorfozy */
+.galeria{position:relative}
+.tasma{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding:0 max(24px,calc((100vw - var(--max))/2 + 24px));cursor:grab;-webkit-overflow-scrolling:touch}
+.tasma::-webkit-scrollbar{display:none}
+.tasma.ciagnie{cursor:grabbing;scroll-snap-type:none}
+.tasma{align-items:flex-start}
+.tasma button{display:block;line-height:0;flex:0 0 auto;height:min(420px,70vw);padding:0;border:0;background:#eee;scroll-snap-align:center;cursor:zoom-in;border-radius:4px;overflow:hidden}
+.tasma img{height:100%;width:auto;max-width:none;pointer-events:none;user-select:none}
+.strzalki{display:flex;gap:10px}
+.strzalki button{width:52px;height:52px;border-radius:50%;border:1.5px solid var(--fiolet);background:#fff;color:var(--fiolet);font-size:22px;cursor:pointer;transition:background .2s}
+.strzalki button:hover{background:var(--fiolet);color:#fff}
+
+/* barbershop */
+.barber{background:var(--ciemne);color:#E9E5EC}
+.barber h2{color:#fff}
+.barber-uklad{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,6vw,90px);align-items:center}
+.barber p{color:#C9C2CE}
+.barber ul{list-style:none;padding:0;margin:24px 0 30px;display:grid;gap:12px}
+.barber li{display:flex;gap:14px;align-items:baseline}
+.barber li svg{width:12px;height:18px;flex:none;transform:translateY(3px)}
+.barber-zdj{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:auto auto;gap:10px}
+.barber-zdj img{width:100%;height:100%;object-fit:cover;border-radius:4px}
+.barber-zdj img:first-child{grid-row:1/3;aspect-ratio:2/3}
+.barber-zdj img:not(:first-child){aspect-ratio:3/2}
+.barber .tel-b{color:var(--limonka);font-weight:700;text-decoration:none;font-size:20px}
+
+/* salony */
+.salony-siatka{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.salon{border:1px solid var(--linia);border-radius:6px;overflow:hidden;background:#fff;display:flex;flex-direction:column}
+.salon>img{width:100%;aspect-ratio:3/2;object-fit:cover}
+.salon-tresc{padding:28px 28px 30px}
+.salon h3{font-size:26px;margin-bottom:6px}
+.salon .adres{color:var(--szary);margin-bottom:18px}
+.godziny{display:grid;grid-template-columns:auto 1fr;gap:4px 18px;margin:0 0 20px;font-size:16px}
+.godziny dt{color:var(--szary)}
+.godziny dd{margin:0;font-weight:600}
+.telefony{display:flex;flex-wrap:wrap;gap:10px}
+.telefony a{display:inline-flex;align-items:center;gap:8px;padding:10px 16px;border-radius:8px;border:1.5px solid var(--fiolet);color:var(--fiolet);font-weight:700;text-decoration:none;font-size:16px}
+.telefony a:hover{background:var(--fiolet);color:#fff}
+.telefony a.glowny{background:var(--fiolet);color:#fff}
+.telefony svg{width:16px;height:16px}
+.salon .barber-info{margin:18px 0 0;padding-top:16px;border-top:1px solid var(--linia);font-size:16px}
+.salon .barber-info a{font-weight:700;color:var(--fiolet);text-decoration:none}
+.mapa{margin-top:auto;height:260px;background:var(--tlo2);position:relative}
+.mapa iframe{border:0;width:100%;height:100%;display:block}
+.mapa span{position:absolute;inset:0;display:grid;place-items:center;color:var(--szary);font-size:15px}
+
+/* praca */
+.praca{background:var(--fiolet);color:#fff;padding:56px 0}
+.praca .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px 40px;flex-wrap:wrap}
+.praca h2{font-size:clamp(26px,2.6vw,36px);margin-bottom:8px}
+.praca p{margin:0;color:#EDE3F1;max-width:640px}
+
+/* kontakt */
+.kontakt .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(32px,6vw,90px)}
+.kontakt .bok p{color:var(--szary)}
+.kontakt .bok a{color:var(--fiolet);font-weight:700}
+form{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+label{display:grid;gap:6px;font-size:15px;font-weight:600}
+label.cala{grid-column:1/3}
+input,select,textarea{font:inherit;font-size:16px;padding:14px 14px;border:1.5px solid var(--linia);border-radius:8px;background:#fff;color:var(--tekst);width:100%}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--fiolet)}
+textarea{min-height:120px;resize:vertical}
+.form-dol{grid-column:1/3;display:flex;flex-wrap:wrap;gap:16px;align-items:center}
+.form-dol small{color:var(--szary);font-size:14px;flex:1;min-width:220px}
+.info-ok{grid-column:1/3;display:none;background:var(--tlo2);padding:14px 16px;border-radius:8px;font-weight:600;color:var(--fiolet)}
+
+/* stopka */
+footer{background:#2A1533;color:#CFC4D6;padding:56px 0 28px;font-size:15px}
+footer .kol{display:grid;grid-template-columns:1.2fr 1fr 1fr 1fr;gap:28px}
+footer .logo-st{width:150px;margin-bottom:14px}
+footer .logo-st .lp{fill:#fff}
+footer h4{color:#fff;font-size:16px;margin:0 0 10px}
+footer p{margin:0 0 6px}
+footer a{color:#CFC4D6;text-decoration:none}
+footer a:hover{color:#fff}
+footer .dol{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;margin-top:40px;padding-top:20px;border-top:1px solid rgba(255,255,255,.12)}
+
+/* powiekszenie zdjec */
+.lb{position:fixed;inset:0;background:rgba(20,14,24,.94);z-index:100;display:none;align-items:center;justify-content:center;padding:20px}
+.lb.on{display:flex}
+.lb img{max-width:100%;max-height:88vh;width:auto;height:auto}
+.lb button{position:absolute;background:none;border:0;color:#fff;font-size:34px;cursor:pointer;width:56px;height:56px}
+.lb .x{top:10px;right:10px}.lb .p{left:6px;top:50%;transform:translateY(-50%)}.lb .n{right:6px;top:50%;transform:translateY(-50%)}
+
+.wylinka-badge{display:inline-flex;align-items:center;gap:.4em;color:inherit;text-decoration:none;font-size:.875em;line-height:1;opacity:.85}
+.wylinka-badge:hover,.wylinka-badge:focus-visible{opacity:1}
+.wylinka-badge:focus-visible{outline:2px solid currentColor;outline-offset:3px;border-radius:2px}
+.wylinka-badge svg{width:18px;height:18px;flex:none;overflow:visible}
+.wylinka-badge b{font-weight:600}
+.wylinka-badge .wy-old{opacity:.45;transform-origin:40px 30px;transition:transform .32s cubic-bezier(.3,.7,.4,1),opacity .32s ease-out}
+.wylinka-badge .wy-pod{opacity:0;transition:opacity .2s ease-out .08s}
+.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:translate(9px,7px) rotate(9deg);opacity:0}
+.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:1}
+@media (prefers-reduced-motion:reduce){.wylinka-badge .wy-old,.wylinka-badge .wy-pod{transition:none}.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:none;opacity:.45}.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:0}}
+
+@media (max-width:1100px){.menu{gap:20px}.menu a{font-size:15px}}
+@media (max-width:899px){
+  body{font-size:16px}
+  .burger{display:block}
+  .menu{position:fixed;top:68px;left:0;right:0;background:#fff;flex-direction:column;align-items:stretch;gap:0;padding:8px 24px 24px;border-bottom:1px solid var(--linia);transform:translateY(-8px);opacity:0;visibility:hidden;transition:opacity .2s,transform .2s,visibility .2s}
+  .menu.on{opacity:1;visibility:visible;transform:none}
+  .menu a{padding:14px 0;border-bottom:1px solid var(--linia);font-size:18px}
+  .menu .tel{margin-top:16px;justify-content:center;padding:14px}
+  .top.otw .burger span:nth-child(1){transform:translateY(8px) rotate(45deg)}
+  .top.otw .burger span:nth-child(2){opacity:0}
+  .top.otw .burger span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}
+  .logo{width:126px}
+  .hero{grid-template-columns:1fr;grid-template-rows:auto 1fr;height:auto;min-height:calc(100svh - 69px)}
+  .kolaz{order:-1;height:clamp(150px,36svh,340px);grid-template-columns:1fr;grid-template-rows:1fr}
+  .kolaz figure:not(.m){display:none}
+  .kolaz figure.m{display:block;grid-row:auto}
+  .hero-txt{padding:26px 20px 30px;justify-content:center}
+  .hero h1{font-size:clamp(28px,8vw,36px);margin-bottom:14px}
+  .hero p{font-size:16px}
+  .hero .cta{margin-top:24px;gap:14px;align-items:stretch}
+  .hero .cta .btn{width:100%}
+  .hero .salony-tel{font-size:15px;gap:4px 18px}
+  .hero-txt>.pasmo-duze{width:150px;right:-40px;top:-30px}
+  .onas .wrap,.oferta-uklad,.barber-uklad,.salony-siatka,.kontakt .wrap{grid-template-columns:1fr}
+  .oferta-zdj{position:static}
+  .oferta-zdj img{max-width:none;aspect-ratio:4/3}
+  .onas .zdj img:last-child{margin-bottom:28px}
+  form{grid-template-columns:1fr}
+  label.cala,.form-dol,.info-ok{grid-column:1}
+  footer .kol{grid-template-columns:1fr 1fr}
+  footer .kol>div:first-child{grid-column:1/3}
+  .sekcja-tytul{margin-bottom:28px}
+  .strzalki{display:none}
+  .salon-tresc{padding:22px 20px 24px}
+}
+@media (max-width:899px) and (max-height:700px){.kolaz{height:clamp(130px,24svh,200px)}.hero-txt{padding:20px 20px 22px}.hero h1{font-size:28px;margin-bottom:10px}.hero p{font-size:15.5px;line-height:1.5}.hero .cta{margin-top:24px;gap:10px}}
+@media (min-width:900px){.kolaz figure.m{display:none}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header class="top" id="gora">
+  <div class="wrap">
+    <a class="logo" href="#gora" aria-label="Koseda - Studio Fryzjerskie, strona główna"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 272 57" aria-hidden="true" focusable="false"><path class="lp" fill="#68307C" fill-rule="evenodd" d="M228.20 41.50 L228.30 42.20 L230.20 45.70 L232.10 48.20 L233.80 49.90 L235.80 51.50 L237.80 52.80 L239.90 53.80 L242.20 54.60 L245.60 55.10 L247.80 55.80 L250.00 55.80 L251.50 55.10 L254.40 54.80 L256.10 54.10 L257.40 53.80 L259.60 52.70 L262.70 50.50 L264.30 48.90 L264.70 49.00 L265.00 49.50 L265.00 54.40 L265.40 55.30 L266.10 56.00 L267.20 55.70 L269.00 55.80 L269.40 55.60 L270.80 54.00 L270.70 43.20 L271.00 42.10 L270.30 41.40 L269.40 41.00 L263.40 41.10 L262.90 41.50 L261.80 43.30 L260.60 44.80 L257.20 47.80 L255.70 48.70 L253.40 49.70 L250.70 50.20 L247.00 50.20 L245.40 50.00 L241.70 48.70 L239.90 47.60 L237.60 45.80 L235.30 43.00 L234.50 41.60 L233.80 41.10 L228.80 41.00ZM180.20 41.50 L180.30 42.20 L182.10 45.50 L184.30 48.40 L185.60 49.70 L189.50 52.60 L190.80 53.10 L191.90 53.80 L192.90 54.00 L194.60 54.70 L197.60 55.10 L199.80 55.80 L202.00 55.80 L203.40 55.10 L206.20 54.80 L209.00 53.80 L211.50 52.60 L214.40 50.60 L216.00 49.20 L216.50 49.20 L216.80 49.60 L216.80 54.30 L217.00 54.90 L218.00 55.90 L219.10 55.70 L221.10 55.80 L222.00 55.10 L222.40 54.30 L222.40 41.70 L221.80 41.10 L215.40 41.10 L214.90 41.50 L213.80 43.30 L212.60 44.80 L210.60 46.70 L209.10 47.80 L207.00 49.00 L205.00 49.80 L202.70 50.20 L199.00 50.20 L197.40 50.00 L193.90 48.80 L190.70 46.60 L188.40 44.30 L186.80 41.80 L186.20 41.20 L185.50 41.00 L180.80 41.00ZM131.20 41.40 L131.20 42.00 L131.80 42.90 L132.20 44.00 L134.30 47.10 L137.80 50.60 L139.10 51.60 L141.00 52.80 L143.10 53.80 L145.70 54.70 L149.20 55.20 L150.90 55.80 L153.00 55.80 L154.30 55.20 L158.10 54.70 L160.90 53.70 L162.70 52.80 L165.80 50.60 L167.90 48.60 L170.80 44.70 L172.10 42.10 L172.10 41.40 L171.40 41.00 L166.50 41.10 L166.00 41.50 L164.70 43.60 L163.40 45.20 L161.70 46.80 L160.20 47.90 L158.50 48.80 L155.30 49.90 L152.70 50.20 L150.30 50.20 L147.50 49.80 L145.00 49.00 L142.90 47.90 L141.50 46.90 L139.20 44.70 L138.00 43.20 L137.20 41.60 L136.60 41.10 L131.70 41.00ZM49.00 41.60 L49.10 42.30 L50.30 44.60 L52.30 47.40 L54.80 49.90 L57.20 51.80 L59.40 53.10 L62.90 54.50 L65.10 55.00 L66.60 55.10 L68.80 55.80 L71.00 55.80 L72.40 55.10 L75.20 54.80 L76.60 54.20 L78.20 53.80 L80.60 52.60 L83.40 50.60 L86.60 47.40 L88.60 44.60 L89.90 42.00 L89.70 41.20 L89.30 41.00 L84.40 41.10 L83.80 41.60 L82.10 44.20 L80.50 45.90 L78.90 47.30 L76.70 48.70 L73.30 49.90 L70.90 50.20 L68.20 50.20 L65.90 49.90 L62.90 48.90 L60.50 47.50 L57.60 45.00 L56.10 43.10 L55.40 41.80 L54.60 41.10 L49.60 41.00 L49.20 41.20ZM227.10 29.90 L227.00 34.40 L227.20 35.00 L227.70 35.40 L231.60 35.40 L232.20 35.20 L232.70 34.40 L232.70 32.70 L233.00 30.20 L234.10 26.90 L236.20 23.50 L238.30 21.20 L241.20 19.10 L243.20 18.10 L247.30 17.10 L250.60 17.10 L254.40 18.10 L256.30 19.00 L258.70 20.80 L261.70 23.90 L262.90 25.60 L263.20 26.50 L263.80 27.40 L264.80 31.00 L265.00 32.70 L264.90 34.50 L265.10 35.00 L265.60 35.40 L269.60 35.30 L270.10 35.00 L270.80 34.10 L270.70 14.20 L271.00 13.10 L270.30 12.40 L269.40 12.00 L265.40 12.10 L265.00 12.70 L265.00 17.80 L264.50 18.50 L264.10 18.40 L262.10 16.40 L259.10 14.40 L256.40 13.20 L252.50 12.20 L250.30 12.00 L245.80 12.20 L241.30 13.20 L240.20 13.80 L238.70 14.30 L235.50 16.30 L231.80 19.80 L230.10 22.10 L228.20 25.80ZM130.00 29.20 L129.80 34.40 L130.00 34.90 L130.60 35.40 L173.20 35.40 L173.70 35.00 L173.90 34.40 L173.70 31.30 L172.70 26.70 L170.80 22.40 L168.80 19.50 L165.50 16.30 L162.40 14.30 L159.60 13.10 L155.60 12.20 L153.30 12.00 L148.40 12.20 L143.90 13.20 L139.60 15.30 L136.60 17.50 L135.20 18.90 L133.10 21.50 L131.20 25.10ZM135.90 29.40 L137.10 25.90 L137.90 24.50 L139.90 21.90 L141.70 20.30 L143.60 19.00 L146.10 17.90 L150.00 17.10 L152.70 17.10 L157.80 18.20 L159.90 19.20 L162.30 20.90 L165.00 24.20 L166.80 27.80 L167.40 30.20 L167.00 30.80 L166.50 31.00 L136.60 31.00 L135.90 30.40ZM47.50 32.50 L47.50 34.40 L47.80 35.00 L48.20 35.30 L52.40 35.40 L53.00 35.10 L53.40 34.40 L53.40 32.40 L53.70 31.50 L53.80 30.00 L54.20 28.30 L55.10 26.10 L56.20 24.30 L57.50 22.70 L60.30 20.10 L61.80 19.10 L64.00 18.10 L67.10 17.40 L70.20 17.30 L74.20 17.90 L77.00 19.00 L78.80 20.10 L81.90 23.00 L83.70 25.50 L84.90 28.20 L85.50 31.30 L85.50 34.40 L85.90 35.10 L86.50 35.40 L90.40 35.40 L91.00 35.10 L91.40 34.40 L91.40 30.90 L90.70 27.20 L90.10 26.00 L89.90 25.10 L88.80 23.00 L87.50 21.10 L86.00 19.40 L82.80 16.40 L80.90 15.10 L78.80 14.00 L76.60 13.10 L72.60 12.20 L70.30 12.00 L66.10 12.20 L61.70 13.30 L57.70 15.30 L54.30 18.00 L51.30 21.50 L50.20 23.20 L49.10 25.40 L48.10 28.50 L47.80 31.50ZM0.00 12.00 L0.00 13.60 L0.40 13.60 L1.10 14.00 L9.30 20.70 L26.30 34.10 L27.20 35.20 L27.10 35.70 L24.50 37.70 L23.40 38.30 L21.60 39.70 L14.80 44.20 L6.70 49.90 L4.40 51.30 L2.50 52.80 L0.50 54.00 L0.00 54.00 L0.00 55.80 L5.80 55.70 L6.90 55.90 L8.00 55.10 L9.10 54.60 L19.80 47.10 L26.60 42.60 L28.40 41.20 L35.80 36.30 L36.40 36.30 L36.80 36.80 L36.90 54.70 L38.00 55.90 L39.10 55.70 L41.10 55.80 L41.70 55.40 L42.40 54.30 L42.30 12.50 L41.40 12.00 L37.60 12.00 L37.30 12.10 L36.80 12.70 L36.80 33.70 L36.40 34.30 L35.90 34.30 L34.80 33.70 L8.10 12.30 L7.40 12.00ZM222.40 0.00 L216.80 0.00 L216.80 17.70 L216.50 18.20 L216.20 18.30 L215.60 18.00 L212.50 15.30 L210.50 14.10 L208.10 13.10 L204.00 12.10 L198.10 12.00 L196.40 12.20 L194.30 12.90 L193.10 13.10 L190.60 14.10 L188.40 15.30 L185.10 18.00 L182.40 21.20 L181.20 23.20 L180.10 25.50 L179.10 29.10 L178.80 32.30 L178.80 34.40 L179.00 34.90 L179.60 35.40 L183.60 35.40 L184.50 34.90 L184.70 34.40 L184.70 31.30 L185.00 29.20 L186.00 26.40 L188.10 23.20 L191.20 20.20 L192.80 19.10 L194.80 18.10 L198.70 17.10 L202.90 17.10 L206.50 18.10 L207.40 18.70 L208.30 19.00 L210.90 21.00 L212.80 22.90 L214.90 25.90 L215.80 27.80 L216.80 32.00 L216.80 34.40 L217.40 35.30 L221.40 35.40 L222.00 35.10 L222.40 34.40Z"/><path class="ly" fill="#E3E249" fill-rule="evenodd" d="M120.60 12.10 L103.80 12.10 L100.60 14.10 L98.30 16.00 L96.90 17.50 L95.90 19.10 L95.30 20.90 L95.30 22.00 L96.10 25.10 L97.10 27.00 L98.40 28.70 L99.70 30.00 L105.60 35.10 L108.90 38.50 L110.00 40.00 L111.00 42.30 L111.00 44.40 L110.80 45.20 L110.00 46.90 L108.90 48.40 L107.60 49.70 L104.70 51.80 L102.80 52.90 L99.70 54.20 L99.30 54.60 L98.80 55.80 L98.80 56.90 L99.60 56.90 L99.50 56.10 L99.90 55.80 L115.10 55.80 L116.30 55.10 L118.10 54.50 L122.80 51.60 L124.80 49.60 L125.70 48.20 L126.10 46.50 L126.10 44.30 L125.70 41.90 L124.60 39.60 L122.90 37.30 L118.10 32.30 L117.60 31.50 L115.30 29.20 L113.00 26.20 L112.00 24.30 L111.40 22.10 L111.50 20.10 L111.90 18.90 L112.90 17.30 L115.00 15.40 L116.90 14.20 L119.10 13.20 L120.80 12.70 L121.00 12.40Z"/></svg></a>
+    <button class="burger" aria-label="Menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+    <nav class="menu" id="menu">
+      <a href="#o-nas">O nas</a>
+      <a href="#oferta">Oferta</a>
+      <a href="#metamorfozy">Metamorfozy</a>
+      <a href="#barbershop">Barbershop</a>
+      <a href="#salony">Salony</a>
+      <a href="#kontakt">Kontakt</a>
+      <a class="tel" href="#salony"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg>Umów wizytę</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero" style="padding:0">
+  <div class="hero-txt">
+    <svg class="pasmo-duze" viewBox="95 12 31.5 45" aria-hidden="true"><path fill="#E3E249" d="M120.60 12.10 L103.80 12.10 L100.60 14.10 L98.30 16.00 L96.90 17.50 L95.90 19.10 L95.30 20.90 L95.30 22.00 L96.10 25.10 L97.10 27.00 L98.40 28.70 L99.70 30.00 L105.60 35.10 L108.90 38.50 L110.00 40.00 L111.00 42.30 L111.00 44.40 L110.80 45.20 L110.00 46.90 L108.90 48.40 L107.60 49.70 L104.70 51.80 L102.80 52.90 L99.70 54.20 L99.30 54.60 L98.80 55.80 L98.80 56.90 L99.60 56.90 L99.50 56.10 L99.90 55.80 L115.10 55.80 L116.30 55.10 L118.10 54.50 L122.80 51.60 L124.80 49.60 L125.70 48.20 L126.10 46.50 L126.10 44.30 L125.70 41.90 L124.60 39.60 L122.90 37.30 L118.10 32.30 L117.60 31.50 L115.30 29.20 L113.00 26.20 L112.00 24.30 L111.40 22.10 L111.50 20.10 L111.90 18.90 L112.90 17.30 L115.00 15.40 L116.90 14.20 L119.10 13.20 L120.80 12.70 L121.00 12.40Z"/></svg>
+    <h1>Fryzjer w Gdyni. Specjaliści od włosów od 1992&nbsp;roku</h1>
+    <p>Dwa salony Koseda, w Witawie i w Chyloni, oraz barbershop dla Panów. Strzyżemy Panie, Panów i dzieci, robimy koloryzacje, upięcia ślubne, przedłużanie i zagęszczanie włosów.</p>
+    <div class="cta">
+      <a class="btn btn-l" href="#salony">Umów wizytę w salonie</a>
+      <div class="salony-tel">
+        <span>Witawa <a href="tel:+48586992002">58 699 20 02</a></span>
+        <span>Chylonia <a href="tel:+48586639191">58 663 91 91</a></span>
+      </div>
+    </div>
+  </div>
+  <div class="kolaz">
+    <figure><img src="img/salon-chylonia-wejscie.webp" width="600" height="900" alt="Salon Koseda w Gdyni Chyloni, wejście z logo" fetchpriority="high"></figure>
+    <figure><img src="img/metamorfoza-01-m.webp" srcset="img/metamorfoza-01-m.webp 560w, img/metamorfoza-01.webp 945w" sizes="(min-width:1500px) 600px, 32vw" width="945" height="945" alt="Koloryzacja balayage wykonana w salonie Koseda"></figure>
+    <figure><img src="img/salon-chylonia.webp" width="900" height="600" alt="Stanowiska fryzjerskie w salonie Koseda"></figure>
+    <figure class="m"><img src="img/salon-chylonia-m.webp" srcset="img/salon-chylonia-m.webp 560w, img/salon-chylonia.webp 900w" sizes="100vw" width="900" height="600" alt="Salon Koseda w Gdyni"></figure>
+  </div>
+</section>
+
+<section class="onas" id="o-nas">
+  <div class="wrap">
+    <div>
+      <h2>Od ponad 30 lat dbamy o włosy gdynian</h2>
+      <div class="ciecie"><svg width="14" height="20" class="s" viewBox="95 12 31.5 45" aria-hidden="true"><path fill="#E3E249" d="M120.60 12.10 L103.80 12.10 L100.60 14.10 L98.30 16.00 L96.90 17.50 L95.90 19.10 L95.30 20.90 L95.30 22.00 L96.10 25.10 L97.10 27.00 L98.40 28.70 L99.70 30.00 L105.60 35.10 L108.90 38.50 L110.00 40.00 L111.00 42.30 L111.00 44.40 L110.80 45.20 L110.00 46.90 L108.90 48.40 L107.60 49.70 L104.70 51.80 L102.80 52.90 L99.70 54.20 L99.30 54.60 L98.80 55.80 L98.80 56.90 L99.60 56.90 L99.50 56.10 L99.90 55.80 L115.10 55.80 L116.30 55.10 L118.10 54.50 L122.80 51.60 L124.80 49.60 L125.70 48.20 L126.10 46.50 L126.10 44.30 L125.70 41.90 L124.60 39.60 L122.90 37.30 L118.10 32.30 L117.60 31.50 L115.30 29.20 L113.00 26.20 L112.00 24.30 L111.40 22.10 L111.50 20.10 L111.90 18.90 L112.90 17.30 L115.00 15.40 L116.90 14.20 L119.10 13.20 L120.80 12.70 L121.00 12.40Z"/></svg><i></i></div>
+      <p class="lead" style="margin-top:26px">Koseda Studio Fryzjerskie działa od 1992 roku. Zapraszamy Panie, Panów i dzieci, a każdą wizytę zaczynamy od rozmowy o tym, jaki styl pasuje do Państwa włosów i codzienności.</p>
+      <p>Nasi styliści szkolili się m.in. w Akademii Vidal Sassoon w Stanach Zjednoczonych, w Toni&nbsp;&amp;&nbsp;Guy, L'Oréal i Wella, i wciąż jeździmy na kolejne szkolenia. Czesaliśmy uczestniczki wyborów Miss World i Miss Polonia. Jako pierwsi w Trójmieście wprowadziliśmy przedłużanie i zagęszczanie włosów.</p>
+      <p>Pracujemy na profesjonalnych kosmetykach i doradzamy, jak pielęgnować włosy w domu, żeby efekt z salonu został na dłużej.</p>
+      <p class="podpis">Maria Koseda</p>
+      <div class="marki"><span>Pracujemy na kosmetykach:</span><b>L'Oréal</b><b>Wella</b><b>Kérastase</b><b>Matrix</b><b>Joico</b></div>
+    </div>
+    <div class="zdj">
+      <img src="img/salon-witawa.webp" width="400" height="600" alt="Salon Koseda w Gdyni Witawie" loading="lazy">
+      <img src="img/salon-witawa-3.webp" width="400" height="600" alt="Wnętrze salonu Koseda w Witawie" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section class="oferta" id="oferta">
+  <div class="wrap">
+    <div class="sekcja-tytul">
+      <div><h2>Oferta salonu</h2><div class="ciecie"><svg width="14" height="20" class="s" viewBox="95 12 31.5 45" aria-hidden="true"><path fill="#E3E249" d="M120.60 12.10 L103.80 12.10 L100.60 14.10 L98.30 16.00 L96.90 17.50 L95.90 19.10 L95.30 20.90 L95.30 22.00 L96.10 25.10 L97.10 27.00 L98.40 28.70 L99.70 30.00 L105.60 35.10 L108.90 38.50 L110.00 40.00 L111.00 42.30 L111.00 44.40 L110.80 45.20 L110.00 46.90 L108.90 48.40 L107.60 49.70 L104.70 51.80 L102.80 52.90 L99.70 54.20 L99.30 54.60 L98.80 55.80 L98.80 56.90 L99.60 56.90 L99.50 56.10 L99.90 55.80 L115.10 55.80 L116.30 55.10 L118.10 54.50 L122.80 51.60 L124.80 49.60 L125.70 48.20 L126.10 46.50 L126.10 44.30 L125.70 41.90 L124.60 39.60 L122.90 37.30 L118.10 32.30 L117.60 31.50 L115.30 29.20 L113.00 26.20 L112.00 24.30 L111.40 22.10 L111.50 20.10 L111.90 18.90 L112.90 17.30 L115.00 15.40 L116.90 14.20 L119.10 13.20 L120.80 12.70 L121.00 12.40Z"/></svg><i></i></div></div>
+      <p>Cennik i wolne terminy podajemy telefonicznie w godzinach pracy salonów. Na stronie docelowej może tu być pełny cennik.</p>
+    </div>
+    <div class="oferta-uklad">
+      <div class="oferta-zdj">
+        <img src="img/metamorfoza-03.webp" width="945" height="945" alt="Blond z falami - metamorfoza w salonie Koseda" loading="lazy">
+        <p>Metamorfoza wykonana w naszym salonie.</p>
+      </div>
+      <div>
+        <div class="usluga"><svg class="s" viewBox="95 12 31.5 45" aria-hidden="true"><path fill="#68307C" d="M120.60 12.10 L103.80 12.10 L100.60 14.10 L98.30 16.00 L96.90 17.50 L95.90 19.10 L95.30 20.90 L95.30 22.00 L96.10 25.10 L97.10 27.00 L98.40 28.70 L99.70 30.00 L105.60 35.10 L108.90 38.50 L110.00 40.00 L111.00 42.30 L111.00 44.40 L110.80 45.20 L110.00 46.90 L108.90 48.40 L107.60 49.70 L104.70 51.80 L102.80 52.90 L99.70 54.20 L99.30 54.60 L98.80 55.80 L98.80 56.90 L99.60 56.90 L99.50 56.10 L99.90 55.80 L115.10 55.80 L116.30 55.10 L118.10 54.50 L122.80 51.60 L124.80 49.60 L125.70 48.20 L126.10 46.50 L126.10 44.30 L125.70 41.90 L124.60 39.60 L122.90 37.30 L118.10 32.30 L117.60 31.50 L115.30 29.20 L113.00 26.20 L112.00 24.30 L111.40 22.10 L111.50 20.10 L111.90 18.90 L112.90 17.30 L115.00 15.40 L116.90 14.20 L119.10 13.20 L120.80 12.70 L121.00 12.40Z"/></svg><h3>Strzyżenie</h3><p>Damskie, męskie i dziecięce. Pomożemy dobrać fryzurę albo zrealizujemy Państwa pomysł, zgodnie z tym, co teraz się nosi.</p></div>
+        <div class="usluga"><svg class="s" viewBox="95 12 31.5 45" aria-hidden="true"><path fill="#68307C" d="M120.60 12.10 L103.80 12.10 L100.60 14.10 L98.30 16.00 L96.90 17.50 L95.90 19.10 L95.30 20.90 L95.30 22.00 L96.10 25.10 L97.10 27.00 L98.40 28.70 L99.70 30.00 L105.60 35.10 L108.90 38.50 L110.00 40.00 L111.00 42.30 L111.00 44.40 L110.80 45.20 L110.00 46.90 L108.90 48.40 L107.60 49.70 L104.70 51.80 L102.80 52.90 L99.70 54.20 L99.30 54.60 L98.80 55.80 L98.80 56.90 L99.60 56.90 L99.50 56.10 L99.90 55.80 L115.10 55.80 L116.30 55.10 L118.10 54.50 L122.80 51.60 L124.80 49.60 L125.70 48.20 L126.10 46.50 L126.10 44.30 L125.70 41.90 L124.60 39.60 L122.90 37.30 L118.10 32.30 L117.60 31.50 L115.30 29.20 L113.00 26.20 L112.00 24.30 L111.40 22.10 L111.50 20.10 L111.90 18.90 L112.90 17.30 L115.00 15.40 L116.90 14.20 L119.10 13.20 L120.80 12.70 L121.00 12.40Z"/></svg><h3>Koloryzacja</h3><p>Kolor dobieramy indywidualnie, na farbach L'Oréal, Wella, Matrix, Toni&nbsp;&amp;&nbsp;Guy i Joico.</p><ul><li>balayage</li><li>ombre</li><li>sombre</li><li>flamboyage</li><li>tonowanie bez amoniaku</li><li>cover na siwe włosy</li></ul></div>
+        <div class="usluga"><svg class="s" viewBox="95 12 31.5 45" aria-hidden="true"><path fill="#68307C" d="M120.60 12.10 L103.80 12.10 L100.60 14.10 L98.30 16.00 L96.90 17.50 L95.90 19.10 L95.30 20.90 L95.30 22.00 L96.10 25.10 L97.10 27.00 L98.40 28.70 L99.70 30.00 L105.60 35.10 L108.90 38.50 L110.00 40.00 L111.00 42.30 L111.00 44.40 L110.80 45.20 L110.00 46.90 L108.90 48.40 L107.60 49.70 L104.70 51.80 L102.80 52.90 L99.70 54.20 L99.30 54.60 L98.80 55.80 L98.80 56.90 L99.60 56.90 L99.50 56.10 L99.90 55.80 L115.10 55.80 L116.30 55.10 L118.10 54.50 L122.80 51.60 L124.80 49.60 L125.70 48.20 L126.10 46.50 L126.10 44.30 L125.70 41.90 L124.60 39.60 L122.90 37.30 L118.10 32.30 L117.60 31.50 L115.30 29.20 L113.00 26.20 L112.00 24.30 L111.40 22.10 L111.50 20.10 L111.90 18.90 L112.90 17.30 L115.00 15.40 L116.90 14.20 L119.10 13.20 L120.80 12.70 L121.00 12.40Z"/></svg><h3>Upięcia i fryzury okolicznościowe</h3><p>Fryzury dzienne, wieczorowe, ślubne i komunijne, a na życzenie także fantazyjne upięcia na pokazy.</p></div>
+        <div class="usluga"><svg class="s" viewBox="95 12 31.5 45" aria-hidden="true"><path fill="#68307C" d="M120.60 12.10 L103.80 12.10 L100.60 14.10 L98.30 16.00 L96.90 17.50 L95.90 19.10 L95.30 20.90 L95.30 22.00 L96.10 25.10 L97.10 27.00 L98.40 28.70 L99.70 30.00 L105.60 35.10 L108.90 38.50 L110.00 40.00 L111.00 42.30 L111.00 44.40 L110.80 45.20 L110.00 46.90 L108.90 48.40 L107.60 49.70 L104.70 51.80 L102.80 52.90 L99.70 54.20 L99.30 54.60 L98.80 55.80 L98.80 56.90 L99.60 56.90 L99.50 56.10 L99.90 55.80 L115.10 55.80 L116.30 55.10 L118.10 54.50 L122.80 51.60 L124.80 49.60 L125.70 48.20 L126.10 46.50 L126.10 44.30 L125.70 41.90 L124.60 39.60 L122.90 37.30 L118.10 32.30 L117.60 31.50 L115.30 29.20 L113.00 26.20 L112.00 24.30 L111.40 22.10 L111.50 20.10 L111.90 18.90 L112.90 17.30 L115.00 15.40 L116.90 14.20 L119.10 13.20 L120.80 12.70 L121.00 12.40Z"/></svg><h3>Przedłużanie i zagęszczanie włosów</h3><p>Wprowadziliśmy je jako pierwsi na trójmiejskim rynku i mamy w tym największe doświadczenie.</p></div>
+        <div class="usluga"><svg class="s" viewBox="95 12 31.5 45" aria-hidden="true"><path fill="#68307C" d="M120.60 12.10 L103.80 12.10 L100.60 14.10 L98.30 16.00 L96.90 17.50 L95.90 19.10 L95.30 20.90 L95.30 22.00 L96.10 25.10 L97.10 27.00 L98.40 28.70 L99.70 30.00 L105.60 35.10 L108.90 38.50 L110.00 40.00 L111.00 42.30 L111.00 44.40 L110.80 45.20 L110.00 46.90 L108.90 48.40 L107.60 49.70 L104.70 51.80 L102.80 52.90 L99.70 54.20 L99.30 54.60 L98.80 55.80 L98.80 56.90 L99.60 56.90 L99.50 56.10 L99.90 55.80 L115.10 55.80 L116.30 55.10 L118.10 54.50 L122.80 51.60 L124.80 49.60 L125.70 48.20 L126.10 46.50 L126.10 44.30 L125.70 41.90 L124.60 39.60 L122.90 37.30 L118.10 32.30 L117.60 31.50 L115.30 29.20 L113.00 26.20 L112.00 24.30 L111.40 22.10 L111.50 20.10 L111.90 18.90 L112.90 17.30 L115.00 15.40 L116.90 14.20 L119.10 13.20 L120.80 12.70 L121.00 12.40Z"/></svg><h3>Keratynowe prostowanie</h3><p>Zabieg na keratynie, bez żrących środków, który prostuje, odżywia i nadaje połysk. Najlepiej działa na włosach kręconych i zniszczonych.</p></div>
+        <div class="usluga"><svg class="s" viewBox="95 12 31.5 45" aria-hidden="true"><path fill="#68307C" d="M120.60 12.10 L103.80 12.10 L100.60 14.10 L98.30 16.00 L96.90 17.50 L95.90 19.10 L95.30 20.90 L95.30 22.00 L96.10 25.10 L97.10 27.00 L98.40 28.70 L99.70 30.00 L105.60 35.10 L108.90 38.50 L110.00 40.00 L111.00 42.30 L111.00 44.40 L110.80 45.20 L110.00 46.90 L108.90 48.40 L107.60 49.70 L104.70 51.80 L102.80 52.90 L99.70 54.20 L99.30 54.60 L98.80 55.80 L98.80 56.90 L99.60 56.90 L99.50 56.10 L99.90 55.80 L115.10 55.80 L116.30 55.10 L118.10 54.50 L122.80 51.60 L124.80 49.60 L125.70 48.20 L126.10 46.50 L126.10 44.30 L125.70 41.90 L124.60 39.60 L122.90 37.30 L118.10 32.30 L117.60 31.50 L115.30 29.20 L113.00 26.20 L112.00 24.30 L111.40 22.10 L111.50 20.10 L111.90 18.90 L112.90 17.30 L115.00 15.40 L116.90 14.20 L119.10 13.20 L120.80 12.70 L121.00 12.40Z"/></svg><h3>Pielęgnacja i regeneracja</h3><p>Rytuały Kérastase, zabiegi odbudowujące strukturę włosa, masaż skóry głowy i trwała ondulacja.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="metamorfozy" id="metamorfozy">
+  <div class="wrap">
+    <div class="sekcja-tytul">
+      <div><h2>Metamorfozy z naszego fotela</h2><div class="ciecie"><svg width="14" height="20" class="s" viewBox="95 12 31.5 45" aria-hidden="true"><path fill="#E3E249" d="M120.60 12.10 L103.80 12.10 L100.60 14.10 L98.30 16.00 L96.90 17.50 L95.90 19.10 L95.30 20.90 L95.30 22.00 L96.10 25.10 L97.10 27.00 L98.40 28.70 L99.70 30.00 L105.60 35.10 L108.90 38.50 L110.00 40.00 L111.00 42.30 L111.00 44.40 L110.80 45.20 L110.00 46.90 L108.90 48.40 L107.60 49.70 L104.70 51.80 L102.80 52.90 L99.70 54.20 L99.30 54.60 L98.80 55.80 L98.80 56.90 L99.60 56.90 L99.50 56.10 L99.90 55.80 L115.10 55.80 L116.30 55.10 L118.10 54.50 L122.80 51.60 L124.80 49.60 L125.70 48.20 L126.10 46.50 L126.10 44.30 L125.70 41.90 L124.60 39.60 L122.90 37.30 L118.10 32.30 L117.60 31.50 L115.30 29.20 L113.00 26.20 L112.00 24.30 L111.40 22.10 L111.50 20.10 L111.90 18.90 L112.90 17.30 L115.00 15.40 L116.90 14.20 L119.10 13.20 L120.80 12.70 L121.00 12.40Z"/></svg><i></i></div></div>
+      <div class="strzalki"><button type="button" data-k="-1" aria-label="Poprzednie zdjęcia">&#8592;</button><button type="button" data-k="1" aria-label="Następne zdjęcia">&#8594;</button></div>
+    </div>
+  </div>
+  <div class="galeria">
+    <div class="tasma" id="tasma">
+      <button type="button" data-duze="img/metamorfoza-01.webp" aria-label="Powiększ zdjęcie"><img src="img/metamorfoza-01-m.webp" width="560" height="560" alt="Metamorfoza włosów w salonie Koseda, zdjęcie przed i po" loading="lazy" draggable="false"></button>
+      <button type="button" data-duze="img/metamorfoza-02.webp" aria-label="Powiększ zdjęcie"><img src="img/metamorfoza-02-m.webp" width="560" height="420" alt="Metamorfoza włosów w salonie Koseda, zdjęcie przed i po" loading="lazy" draggable="false"></button>
+      <button type="button" data-duze="img/metamorfoza-03.webp" aria-label="Powiększ zdjęcie"><img src="img/metamorfoza-03-m.webp" width="560" height="560" alt="Metamorfoza włosów w salonie Koseda, zdjęcie przed i po" loading="lazy" draggable="false"></button>
+      <button type="button" data-duze="img/metamorfoza-04.webp" aria-label="Powiększ zdjęcie"><img src="img/metamorfoza-04-m.webp" width="560" height="420" alt="Metamorfoza włosów w salonie Koseda, zdjęcie przed i po" loading="lazy" draggable="false"></button>
+      <button type="button" data-duze="img/metamorfoza-05.webp" aria-label="Powiększ zdjęcie"><img src="img/metamorfoza-05-m.webp" width="560" height="560" alt="Metamorfoza włosów w salonie Koseda, zdjęcie przed i po" loading="lazy" draggable="false"></button>
+      <button type="button" data-duze="img/metamorfoza-06.webp" aria-label="Powiększ zdjęcie"><img src="img/metamorfoza-06-m.webp" width="560" height="560" alt="Metamorfoza włosów w salonie Koseda, zdjęcie przed i po" loading="lazy" draggable="false"></button>
+      <button type="button" data-duze="img/metamorfoza-07.webp" aria-label="Powiększ zdjęcie"><img src="img/metamorfoza-07-m.webp" width="560" height="373" alt="Metamorfoza włosów w salonie Koseda, zdjęcie przed i po" loading="lazy" draggable="false"></button>
+      <button type="button" data-duze="img/metamorfoza-08.webp" aria-label="Powiększ zdjęcie"><img src="img/metamorfoza-08-m.webp" width="560" height="560" alt="Metamorfoza włosów w salonie Koseda, zdjęcie przed i po" loading="lazy" draggable="false"></button>
+      <button type="button" data-duze="img/metamorfoza-09.webp" aria-label="Powiększ zdjęcie"><img src="img/metamorfoza-09-m.webp" width="560" height="373" alt="Metamorfoza włosów w salonie Koseda, zdjęcie przed i po" loading="lazy" draggable="false"></button>
+      <button type="button" data-duze="img/metamorfoza-10.webp" aria-label="Powiększ zdjęcie"><img src="img/metamorfoza-10-m.webp" width="560" height="560" alt="Metamorfoza włosów w salonie Koseda, zdjęcie przed i po" loading="lazy" draggable="false"></button>
+      <button type="button" data-duze="img/metamorfoza-11.webp" aria-label="Powiększ zdjęcie"><img src="img/metamorfoza-11-m.webp" width="560" height="373" alt="Metamorfoza włosów w salonie Koseda, zdjęcie przed i po" loading="lazy" draggable="false"></button>
+      <button type="button" data-duze="img/metamorfoza-12.webp" aria-label="Powiększ zdjęcie"><img src="img/metamorfoza-12-m.webp" width="560" height="560" alt="Metamorfoza włosów w salonie Koseda, zdjęcie przed i po" loading="lazy" draggable="false"></button>
+      <button type="button" data-duze="img/metamorfoza-13.webp" aria-label="Powiększ zdjęcie"><img src="img/metamorfoza-13-m.webp" width="560" height="420" alt="Metamorfoza włosów w salonie Koseda, zdjęcie przed i po" loading="lazy" draggable="false"></button>
+    </div>
+  </div>
+</section>
+
+<section class="barber" id="barbershop">
+  <div class="wrap barber-uklad">
+    <div>
+      <h2>Barbershop Witawa</h2>
+      <div class="ciecie"><svg width="14" height="20" class="s" viewBox="95 12 31.5 45" aria-hidden="true"><path fill="#E3E249" d="M120.60 12.10 L103.80 12.10 L100.60 14.10 L98.30 16.00 L96.90 17.50 L95.90 19.10 L95.30 20.90 L95.30 22.00 L96.10 25.10 L97.10 27.00 L98.40 28.70 L99.70 30.00 L105.60 35.10 L108.90 38.50 L110.00 40.00 L111.00 42.30 L111.00 44.40 L110.80 45.20 L110.00 46.90 L108.90 48.40 L107.60 49.70 L104.70 51.80 L102.80 52.90 L99.70 54.20 L99.30 54.60 L98.80 55.80 L98.80 56.90 L99.60 56.90 L99.50 56.10 L99.90 55.80 L115.10 55.80 L116.30 55.10 L118.10 54.50 L122.80 51.60 L124.80 49.60 L125.70 48.20 L126.10 46.50 L126.10 44.30 L125.70 41.90 L124.60 39.60 L122.90 37.30 L118.10 32.30 L117.60 31.50 L115.30 29.20 L113.00 26.20 L112.00 24.30 L111.40 22.10 L111.50 20.10 L111.90 18.90 L112.90 17.30 L115.00 15.40 L116.90 14.20 L119.10 13.20 L120.80 12.70 L121.00 12.40Z"/></svg><i></i></div>
+      <p style="margin-top:26px">Męska strefa w salonie przy Wielkokackiej 2. Nasi barberzy doradzą fryzurę i formę zarostu, a umiejętności szlifują na warsztatach prowadzonych m.in. przez mistrza Polski i Europy w barberingu.</p>
+      <ul>
+        <li><svg class="s" viewBox="95 12 31.5 45" aria-hidden="true"><path fill="#E3E249" d="M120.60 12.10 L103.80 12.10 L100.60 14.10 L98.30 16.00 L96.90 17.50 L95.90 19.10 L95.30 20.90 L95.30 22.00 L96.10 25.10 L97.10 27.00 L98.40 28.70 L99.70 30.00 L105.60 35.10 L108.90 38.50 L110.00 40.00 L111.00 42.30 L111.00 44.40 L110.80 45.20 L110.00 46.90 L108.90 48.40 L107.60 49.70 L104.70 51.80 L102.80 52.90 L99.70 54.20 L99.30 54.60 L98.80 55.80 L98.80 56.90 L99.60 56.90 L99.50 56.10 L99.90 55.80 L115.10 55.80 L116.30 55.10 L118.10 54.50 L122.80 51.60 L124.80 49.60 L125.70 48.20 L126.10 46.50 L126.10 44.30 L125.70 41.90 L124.60 39.60 L122.90 37.30 L118.10 32.30 L117.60 31.50 L115.30 29.20 L113.00 26.20 L112.00 24.30 L111.40 22.10 L111.50 20.10 L111.90 18.90 L112.90 17.30 L115.00 15.40 L116.90 14.20 L119.10 13.20 L120.80 12.70 L121.00 12.40Z"/></svg>Strzyżenie i modelowanie męskich fryzur</li>
+        <li><svg class="s" viewBox="95 12 31.5 45" aria-hidden="true"><path fill="#E3E249" d="M120.60 12.10 L103.80 12.10 L100.60 14.10 L98.30 16.00 L96.90 17.50 L95.90 19.10 L95.30 20.90 L95.30 22.00 L96.10 25.10 L97.10 27.00 L98.40 28.70 L99.70 30.00 L105.60 35.10 L108.90 38.50 L110.00 40.00 L111.00 42.30 L111.00 44.40 L110.80 45.20 L110.00 46.90 L108.90 48.40 L107.60 49.70 L104.70 51.80 L102.80 52.90 L99.70 54.20 L99.30 54.60 L98.80 55.80 L98.80 56.90 L99.60 56.90 L99.50 56.10 L99.90 55.80 L115.10 55.80 L116.30 55.10 L118.10 54.50 L122.80 51.60 L124.80 49.60 L125.70 48.20 L126.10 46.50 L126.10 44.30 L125.70 41.90 L124.60 39.60 L122.90 37.30 L118.10 32.30 L117.60 31.50 L115.30 29.20 L113.00 26.20 L112.00 24.30 L111.40 22.10 L111.50 20.10 L111.90 18.90 L112.90 17.30 L115.00 15.40 L116.90 14.20 L119.10 13.20 L120.80 12.70 L121.00 12.40Z"/></svg>Trymowanie i konturowanie brody</li>
+        <li><svg class="s" viewBox="95 12 31.5 45" aria-hidden="true"><path fill="#E3E249" d="M120.60 12.10 L103.80 12.10 L100.60 14.10 L98.30 16.00 L96.90 17.50 L95.90 19.10 L95.30 20.90 L95.30 22.00 L96.10 25.10 L97.10 27.00 L98.40 28.70 L99.70 30.00 L105.60 35.10 L108.90 38.50 L110.00 40.00 L111.00 42.30 L111.00 44.40 L110.80 45.20 L110.00 46.90 L108.90 48.40 L107.60 49.70 L104.70 51.80 L102.80 52.90 L99.70 54.20 L99.30 54.60 L98.80 55.80 L98.80 56.90 L99.60 56.90 L99.50 56.10 L99.90 55.80 L115.10 55.80 L116.30 55.10 L118.10 54.50 L122.80 51.60 L124.80 49.60 L125.70 48.20 L126.10 46.50 L126.10 44.30 L125.70 41.90 L124.60 39.60 L122.90 37.30 L118.10 32.30 L117.60 31.50 L115.30 29.20 L113.00 26.20 L112.00 24.30 L111.40 22.10 L111.50 20.10 L111.90 18.90 L112.90 17.30 L115.00 15.40 L116.90 14.20 L119.10 13.20 L120.80 12.70 L121.00 12.40Z"/></svg>Golenie brzytwą i podgalanie zarostu</li>
+        <li><svg class="s" viewBox="95 12 31.5 45" aria-hidden="true"><path fill="#E3E249" d="M120.60 12.10 L103.80 12.10 L100.60 14.10 L98.30 16.00 L96.90 17.50 L95.90 19.10 L95.30 20.90 L95.30 22.00 L96.10 25.10 L97.10 27.00 L98.40 28.70 L99.70 30.00 L105.60 35.10 L108.90 38.50 L110.00 40.00 L111.00 42.30 L111.00 44.40 L110.80 45.20 L110.00 46.90 L108.90 48.40 L107.60 49.70 L104.70 51.80 L102.80 52.90 L99.70 54.20 L99.30 54.60 L98.80 55.80 L98.80 56.90 L99.60 56.90 L99.50 56.10 L99.90 55.80 L115.10 55.80 L116.30 55.10 L118.10 54.50 L122.80 51.60 L124.80 49.60 L125.70 48.20 L126.10 46.50 L126.10 44.30 L125.70 41.90 L124.60 39.60 L122.90 37.30 L118.10 32.30 L117.60 31.50 L115.30 29.20 L113.00 26.20 L112.00 24.30 L111.40 22.10 L111.50 20.10 L111.90 18.90 L112.90 17.30 L115.00 15.40 L116.90 14.20 L119.10 13.20 L120.80 12.70 L121.00 12.40Z"/></svg>Tonowanie siwych włosów</li>
+        <li><svg class="s" viewBox="95 12 31.5 45" aria-hidden="true"><path fill="#E3E249" d="M120.60 12.10 L103.80 12.10 L100.60 14.10 L98.30 16.00 L96.90 17.50 L95.90 19.10 L95.30 20.90 L95.30 22.00 L96.10 25.10 L97.10 27.00 L98.40 28.70 L99.70 30.00 L105.60 35.10 L108.90 38.50 L110.00 40.00 L111.00 42.30 L111.00 44.40 L110.80 45.20 L110.00 46.90 L108.90 48.40 L107.60 49.70 L104.70 51.80 L102.80 52.90 L99.70 54.20 L99.30 54.60 L98.80 55.80 L98.80 56.90 L99.60 56.90 L99.50 56.10 L99.90 55.80 L115.10 55.80 L116.30 55.10 L118.10 54.50 L122.80 51.60 L124.80 49.60 L125.70 48.20 L126.10 46.50 L126.10 44.30 L125.70 41.90 L124.60 39.60 L122.90 37.30 L118.10 32.30 L117.60 31.50 L115.30 29.20 L113.00 26.20 L112.00 24.30 L111.40 22.10 L111.50 20.10 L111.90 18.90 L112.90 17.30 L115.00 15.40 L116.90 14.20 L119.10 13.20 L120.80 12.70 L121.00 12.40Z"/></svg>Kosmetyki do włosów i brody, które polecamy</li>
+      </ul>
+      <p style="margin:0">Zapisy: <a class="tel-b" href="tel:+48797387437">797 387 437</a></p>
+      <p style="margin-top:6px;font-size:15px">pon-sob 9:00-21:00, niedz 10:00-18:00</p>
+    </div>
+    <div class="barber-zdj">
+      <img src="img/barber-2.webp" width="602" height="900" alt="Fotel barberski w Barbershop Witawa" loading="lazy">
+      <img src="img/barber-1.webp" width="900" height="600" alt="Stanowiska w barbershopie Koseda" loading="lazy">
+      <img src="img/barber-4.webp" width="900" height="602" alt="Pędzel i miseczka do golenia" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section class="salony" id="salony">
+  <div class="wrap">
+    <div class="sekcja-tytul">
+      <div><h2>Nasze salony w Gdyni</h2><div class="ciecie"><svg width="14" height="20" class="s" viewBox="95 12 31.5 45" aria-hidden="true"><path fill="#E3E249" d="M120.60 12.10 L103.80 12.10 L100.60 14.10 L98.30 16.00 L96.90 17.50 L95.90 19.10 L95.30 20.90 L95.30 22.00 L96.10 25.10 L97.10 27.00 L98.40 28.70 L99.70 30.00 L105.60 35.10 L108.90 38.50 L110.00 40.00 L111.00 42.30 L111.00 44.40 L110.80 45.20 L110.00 46.90 L108.90 48.40 L107.60 49.70 L104.70 51.80 L102.80 52.90 L99.70 54.20 L99.30 54.60 L98.80 55.80 L98.80 56.90 L99.60 56.90 L99.50 56.10 L99.90 55.80 L115.10 55.80 L116.30 55.10 L118.10 54.50 L122.80 51.60 L124.80 49.60 L125.70 48.20 L126.10 46.50 L126.10 44.30 L125.70 41.90 L124.60 39.60 L122.90 37.30 L118.10 32.30 L117.60 31.50 L115.30 29.20 L113.00 26.20 L112.00 24.30 L111.40 22.10 L111.50 20.10 L111.90 18.90 L112.90 17.30 L115.00 15.40 L116.90 14.20 L119.10 13.20 L120.80 12.70 L121.00 12.40Z"/></svg><i></i></div></div>
+      <p>Na wizytę najprościej umówić się telefonicznie. Wybierz salon, który masz bliżej.</p>
+    </div>
+    <div class="salony-siatka">
+      <article class="salon">
+        <img src="img/salon-witawa-2.webp" width="800" height="533" alt="Salon Koseda Gdynia Witawa" loading="lazy">
+        <div class="salon-tresc">
+          <h3>Gdynia Witawa</h3>
+          <p class="adres">ul. Wielkokacka 2, Gdynia</p>
+          <dl class="godziny"><dt>pon-sob</dt><dd>9:00-21:00</dd><dt>niedziela</dt><dd>10:00-18:00</dd></dl>
+          <div class="telefony"><a class="glowny" href="tel:+48586992002"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg>58 699 20 02</a><a href="tel:+48794440587"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg>794 440 587</a></div>
+          <p class="barber-info">W tym samym miejscu Barbershop Witawa: <a href="tel:+48797387437">797 387 437</a></p>
+        </div>
+        <div class="mapa" data-mapa="ul. Wielkokacka 2, Gdynia"><span>Mapa dojazdu</span></div>
+      </article>
+      <article class="salon">
+        <img src="img/salon-chylonia-2.webp" width="900" height="599" alt="Salon Koseda Gdynia Chylonia" loading="lazy">
+        <div class="salon-tresc">
+          <h3>Gdynia Chylonia</h3>
+          <p class="adres">ul. Gniewska 21, Gdynia</p>
+          <dl class="godziny"><dt>pon-pt</dt><dd>8:00-20:00</dd><dt>sobota</dt><dd>8:00-15:00</dd></dl>
+          <div class="telefony"><a class="glowny" href="tel:+48586639191"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg>58 663 91 91</a><a href="tel:+48796638787"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg>796 638 787</a></div>
+        </div>
+        <div class="mapa" data-mapa="ul. Gniewska 21, Gdynia"><span>Mapa dojazdu</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="praca" id="praca">
+  <div class="wrap">
+    <div>
+      <h2>Szukamy fryzjerów i fryzjerek</h2>
+      <p>Masz kwalifikacje, lubisz kontakt z ludźmi i chcesz się rozwijać w zgranym zespole? Napisz do nas, a odezwiemy się w sprawie pracy w jednym z salonów.</p>
+    </div>
+    <a class="btn btn-l" href="#kontakt" data-temat="Praca">Zgłoś się do pracy</a>
+  </div>
+</section>
+
+<section class="kontakt" id="kontakt">
+  <div class="wrap">
+    <div class="bok">
+      <h2>Napisz do nas</h2>
+      <div class="ciecie"><svg width="14" height="20" class="s" viewBox="95 12 31.5 45" aria-hidden="true"><path fill="#E3E249" d="M120.60 12.10 L103.80 12.10 L100.60 14.10 L98.30 16.00 L96.90 17.50 L95.90 19.10 L95.30 20.90 L95.30 22.00 L96.10 25.10 L97.10 27.00 L98.40 28.70 L99.70 30.00 L105.60 35.10 L108.90 38.50 L110.00 40.00 L111.00 42.30 L111.00 44.40 L110.80 45.20 L110.00 46.90 L108.90 48.40 L107.60 49.70 L104.70 51.80 L102.80 52.90 L99.70 54.20 L99.30 54.60 L98.80 55.80 L98.80 56.90 L99.60 56.90 L99.50 56.10 L99.90 55.80 L115.10 55.80 L116.30 55.10 L118.10 54.50 L122.80 51.60 L124.80 49.60 L125.70 48.20 L126.10 46.50 L126.10 44.30 L125.70 41.90 L124.60 39.60 L122.90 37.30 L118.10 32.30 L117.60 31.50 L115.30 29.20 L113.00 26.20 L112.00 24.30 L111.40 22.10 L111.50 20.10 L111.90 18.90 L112.90 17.30 L115.00 15.40 L116.90 14.20 L119.10 13.20 L120.80 12.70 L121.00 12.40Z"/></svg><i></i></div>
+      <p style="margin-top:26px">Pytanie o usługę, termin albo pracę? Wypełnij formularz, a oddzwonimy. Możesz też napisać na <a href="#kontakt">koseda@studiofryzjerskie.pl</a> lub zadzwonić do wybranego salonu.</p>
+      <p>Na wizytę najszybciej umówisz się telefonicznie w godzinach pracy salonu.</p>
+    </div>
+    <form id="formularz" novalidate>
+      <label>Imię<input name="imie" autocomplete="given-name" required></label>
+      <label>Telefon<input name="tel" type="tel" autocomplete="tel" required></label>
+      <label>Salon<select name="salon"><option>Gdynia Witawa</option><option>Gdynia Chylonia</option><option>Barbershop Witawa</option></select></label>
+      <label>Temat<select name="temat" id="temat"><option>Usługi damskie</option><option>Usługi męskie</option><option>Barbershop</option><option>Praca</option></select></label>
+      <label class="cala">Wiadomość<textarea name="wiad" placeholder="Np. koloryzacja, włosy do ramion, najlepiej w sobotę"></textarea></label>
+      <div class="form-dol"><button class="btn btn-f" type="submit">Wyślij wiadomość</button><small>Dane posłużą tylko do odpowiedzi na wiadomość.</small></div>
+      <p class="info-ok" id="info-ok">To podgląd strony - formularz zacznie wysyłać wiadomości na docelowej stronie.</p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="kol">
+      <div><div class="logo-st"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 272 57" aria-hidden="true" focusable="false"><path class="lp" fill="#68307C" fill-rule="evenodd" d="M228.20 41.50 L228.30 42.20 L230.20 45.70 L232.10 48.20 L233.80 49.90 L235.80 51.50 L237.80 52.80 L239.90 53.80 L242.20 54.60 L245.60 55.10 L247.80 55.80 L250.00 55.80 L251.50 55.10 L254.40 54.80 L256.10 54.10 L257.40 53.80 L259.60 52.70 L262.70 50.50 L264.30 48.90 L264.70 49.00 L265.00 49.50 L265.00 54.40 L265.40 55.30 L266.10 56.00 L267.20 55.70 L269.00 55.80 L269.40 55.60 L270.80 54.00 L270.70 43.20 L271.00 42.10 L270.30 41.40 L269.40 41.00 L263.40 41.10 L262.90 41.50 L261.80 43.30 L260.60 44.80 L257.20 47.80 L255.70 48.70 L253.40 49.70 L250.70 50.20 L247.00 50.20 L245.40 50.00 L241.70 48.70 L239.90 47.60 L237.60 45.80 L235.30 43.00 L234.50 41.60 L233.80 41.10 L228.80 41.00ZM180.20 41.50 L180.30 42.20 L182.10 45.50 L184.30 48.40 L185.60 49.70 L189.50 52.60 L190.80 53.10 L191.90 53.80 L192.90 54.00 L194.60 54.70 L197.60 55.10 L199.80 55.80 L202.00 55.80 L203.40 55.10 L206.20 54.80 L209.00 53.80 L211.50 52.60 L214.40 50.60 L216.00 49.20 L216.50 49.20 L216.80 49.60 L216.80 54.30 L217.00 54.90 L218.00 55.90 L219.10 55.70 L221.10 55.80 L222.00 55.10 L222.40 54.30 L222.40 41.70 L221.80 41.10 L215.40 41.10 L214.90 41.50 L213.80 43.30 L212.60 44.80 L210.60 46.70 L209.10 47.80 L207.00 49.00 L205.00 49.80 L202.70 50.20 L199.00 50.20 L197.40 50.00 L193.90 48.80 L190.70 46.60 L188.40 44.30 L186.80 41.80 L186.20 41.20 L185.50 41.00 L180.80 41.00ZM131.20 41.40 L131.20 42.00 L131.80 42.90 L132.20 44.00 L134.30 47.10 L137.80 50.60 L139.10 51.60 L141.00 52.80 L143.10 53.80 L145.70 54.70 L149.20 55.20 L150.90 55.80 L153.00 55.80 L154.30 55.20 L158.10 54.70 L160.90 53.70 L162.70 52.80 L165.80 50.60 L167.90 48.60 L170.80 44.70 L172.10 42.10 L172.10 41.40 L171.40 41.00 L166.50 41.10 L166.00 41.50 L164.70 43.60 L163.40 45.20 L161.70 46.80 L160.20 47.90 L158.50 48.80 L155.30 49.90 L152.70 50.20 L150.30 50.20 L147.50 49.80 L145.00 49.00 L142.90 47.90 L141.50 46.90 L139.20 44.70 L138.00 43.20 L137.20 41.60 L136.60 41.10 L131.70 41.00ZM49.00 41.60 L49.10 42.30 L50.30 44.60 L52.30 47.40 L54.80 49.90 L57.20 51.80 L59.40 53.10 L62.90 54.50 L65.10 55.00 L66.60 55.10 L68.80 55.80 L71.00 55.80 L72.40 55.10 L75.20 54.80 L76.60 54.20 L78.20 53.80 L80.60 52.60 L83.40 50.60 L86.60 47.40 L88.60 44.60 L89.90 42.00 L89.70 41.20 L89.30 41.00 L84.40 41.10 L83.80 41.60 L82.10 44.20 L80.50 45.90 L78.90 47.30 L76.70 48.70 L73.30 49.90 L70.90 50.20 L68.20 50.20 L65.90 49.90 L62.90 48.90 L60.50 47.50 L57.60 45.00 L56.10 43.10 L55.40 41.80 L54.60 41.10 L49.60 41.00 L49.20 41.20ZM227.10 29.90 L227.00 34.40 L227.20 35.00 L227.70 35.40 L231.60 35.40 L232.20 35.20 L232.70 34.40 L232.70 32.70 L233.00 30.20 L234.10 26.90 L236.20 23.50 L238.30 21.20 L241.20 19.10 L243.20 18.10 L247.30 17.10 L250.60 17.10 L254.40 18.10 L256.30 19.00 L258.70 20.80 L261.70 23.90 L262.90 25.60 L263.20 26.50 L263.80 27.40 L264.80 31.00 L265.00 32.70 L264.90 34.50 L265.10 35.00 L265.60 35.40 L269.60 35.30 L270.10 35.00 L270.80 34.10 L270.70 14.20 L271.00 13.10 L270.30 12.40 L269.40 12.00 L265.40 12.10 L265.00 12.70 L265.00 17.80 L264.50 18.50 L264.10 18.40 L262.10 16.40 L259.10 14.40 L256.40 13.20 L252.50 12.20 L250.30 12.00 L245.80 12.20 L241.30 13.20 L240.20 13.80 L238.70 14.30 L235.50 16.30 L231.80 19.80 L230.10 22.10 L228.20 25.80ZM130.00 29.20 L129.80 34.40 L130.00 34.90 L130.60 35.40 L173.20 35.40 L173.70 35.00 L173.90 34.40 L173.70 31.30 L172.70 26.70 L170.80 22.40 L168.80 19.50 L165.50 16.30 L162.40 14.30 L159.60 13.10 L155.60 12.20 L153.30 12.00 L148.40 12.20 L143.90 13.20 L139.60 15.30 L136.60 17.50 L135.20 18.90 L133.10 21.50 L131.20 25.10ZM135.90 29.40 L137.10 25.90 L137.90 24.50 L139.90 21.90 L141.70 20.30 L143.60 19.00 L146.10 17.90 L150.00 17.10 L152.70 17.10 L157.80 18.20 L159.90 19.20 L162.30 20.90 L165.00 24.20 L166.80 27.80 L167.40 30.20 L167.00 30.80 L166.50 31.00 L136.60 31.00 L135.90 30.40ZM47.50 32.50 L47.50 34.40 L47.80 35.00 L48.20 35.30 L52.40 35.40 L53.00 35.10 L53.40 34.40 L53.40 32.40 L53.70 31.50 L53.80 30.00 L54.20 28.30 L55.10 26.10 L56.20 24.30 L57.50 22.70 L60.30 20.10 L61.80 19.10 L64.00 18.10 L67.10 17.40 L70.20 17.30 L74.20 17.90 L77.00 19.00 L78.80 20.10 L81.90 23.00 L83.70 25.50 L84.90 28.20 L85.50 31.30 L85.50 34.40 L85.90 35.10 L86.50 35.40 L90.40 35.40 L91.00 35.10 L91.40 34.40 L91.40 30.90 L90.70 27.20 L90.10 26.00 L89.90 25.10 L88.80 23.00 L87.50 21.10 L86.00 19.40 L82.80 16.40 L80.90 15.10 L78.80 14.00 L76.60 13.10 L72.60 12.20 L70.30 12.00 L66.10 12.20 L61.70 13.30 L57.70 15.30 L54.30 18.00 L51.30 21.50 L50.20 23.20 L49.10 25.40 L48.10 28.50 L47.80 31.50ZM0.00 12.00 L0.00 13.60 L0.40 13.60 L1.10 14.00 L9.30 20.70 L26.30 34.10 L27.20 35.20 L27.10 35.70 L24.50 37.70 L23.40 38.30 L21.60 39.70 L14.80 44.20 L6.70 49.90 L4.40 51.30 L2.50 52.80 L0.50 54.00 L0.00 54.00 L0.00 55.80 L5.80 55.70 L6.90 55.90 L8.00 55.10 L9.10 54.60 L19.80 47.10 L26.60 42.60 L28.40 41.20 L35.80 36.30 L36.40 36.30 L36.80 36.80 L36.90 54.70 L38.00 55.90 L39.10 55.70 L41.10 55.80 L41.70 55.40 L42.40 54.30 L42.30 12.50 L41.40 12.00 L37.60 12.00 L37.30 12.10 L36.80 12.70 L36.80 33.70 L36.40 34.30 L35.90 34.30 L34.80 33.70 L8.10 12.30 L7.40 12.00ZM222.40 0.00 L216.80 0.00 L216.80 17.70 L216.50 18.20 L216.20 18.30 L215.60 18.00 L212.50 15.30 L210.50 14.10 L208.10 13.10 L204.00 12.10 L198.10 12.00 L196.40 12.20 L194.30 12.90 L193.10 13.10 L190.60 14.10 L188.40 15.30 L185.10 18.00 L182.40 21.20 L181.20 23.20 L180.10 25.50 L179.10 29.10 L178.80 32.30 L178.80 34.40 L179.00 34.90 L179.60 35.40 L183.60 35.40 L184.50 34.90 L184.70 34.40 L184.70 31.30 L185.00 29.20 L186.00 26.40 L188.10 23.20 L191.20 20.20 L192.80 19.10 L194.80 18.10 L198.70 17.10 L202.90 17.10 L206.50 18.10 L207.40 18.70 L208.30 19.00 L210.90 21.00 L212.80 22.90 L214.90 25.90 L215.80 27.80 L216.80 32.00 L216.80 34.40 L217.40 35.30 L221.40 35.40 L222.00 35.10 L222.40 34.40Z"/><path class="ly" fill="#E3E249" fill-rule="evenodd" d="M120.60 12.10 L103.80 12.10 L100.60 14.10 L98.30 16.00 L96.90 17.50 L95.90 19.10 L95.30 20.90 L95.30 22.00 L96.10 25.10 L97.10 27.00 L98.40 28.70 L99.70 30.00 L105.60 35.10 L108.90 38.50 L110.00 40.00 L111.00 42.30 L111.00 44.40 L110.80 45.20 L110.00 46.90 L108.90 48.40 L107.60 49.70 L104.70 51.80 L102.80 52.90 L99.70 54.20 L99.30 54.60 L98.80 55.80 L98.80 56.90 L99.60 56.90 L99.50 56.10 L99.90 55.80 L115.10 55.80 L116.30 55.10 L118.10 54.50 L122.80 51.60 L124.80 49.60 L125.70 48.20 L126.10 46.50 L126.10 44.30 L125.70 41.90 L124.60 39.60 L122.90 37.30 L118.10 32.30 L117.60 31.50 L115.30 29.20 L113.00 26.20 L112.00 24.30 L111.40 22.10 L111.50 20.10 L111.90 18.90 L112.90 17.30 L115.00 15.40 L116.90 14.20 L119.10 13.20 L120.80 12.70 L121.00 12.40Z"/></svg></div><p>Studio Fryzjerskie Maria Koseda</p><p>Gdynia, od 1992 roku</p></div>
+      <div><h4>Salon Witawa</h4><p>ul. Wielkokacka 2</p><p><a href="tel:+48586992002">58 699 20 02</a></p><p>Barbershop: <a href="tel:+48797387437">797 387 437</a></p></div>
+      <div><h4>Salon Chylonia</h4><p>ul. Gniewska 21</p><p><a href="tel:+48586639191">58 663 91 91</a></p><p><a href="tel:+48796638787">796 638 787</a></p></div>
+      <div><h4>Na skróty</h4><p><a href="#oferta">Oferta</a></p><p><a href="#praca">Praca</a></p><p><a href="#kontakt">Polityka prywatności</a></p></div>
+    </div>
+    <div class="dol"><span>&copy; 2026 Studio Fryzjerskie Maria Koseda</span><a class="wylinka-badge" href="https://wylinka.pl/?utm_source=studiofryzjerskie.pl&amp;utm_medium=stopka&amp;utm_campaign=wykonanie" rel="noopener" title="Strona wykonana przez Wylinka"><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false" fill="currentColor"><path d="M9.8 22.8l-1.2-7.9 2.2-3.7 15.5 4.6-.5 1.5-7.2 5.5 4.7 15.6 5-15.6 7 0 4.1 12.7-4.2-.9-2.6 1.8-.8-2.2-5.3 15.6-4.3 0 .4 .2-2.1 2.8-1.3-1.1 1.1-1.4-3.1 .2-.1-1.7 2.2-.1-5.7-16.5-4.8 .6-.8 3.1 0 .5-.3 .5 .8 2.2-1.6 .5-.4-1.3-.8 1.6-1.5-.8 .8-1.6-1.4 .6-.6-1.6 2.3-.8 .2-.4 1.3-4.8 5.9-.8-2.4-6.9zM15.2 13.7l-.1-.4-.4 .8-.1 .8 .1 1 .1 .4 .3 .7 .3-.9 .1-.7 0-.8z"/><path class="wy-pod" d="M37.1 49.8l-4.5-13.3 2.6-1.8 4.2 .9 .9 2.8 3-9.7 0-.5 .1-.8 3.2-8.4 .5-1 .6-1 .9-1.1 1.3-1 1.1-.7 1.4-.5 1.4-.3 .7 0 .9 0 1.2 .3 1.4 .6 .8 .5 .7 .7 .6 .7 .5 .9 .3 .9 .1 .9 0 .8-.2 .9-.5 .9-.5 .6-.7 .5-.7 .3-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.6-.1-.6-.3-.7-.4-.5-.4-.4-.5-.3-.6-.3-.7 0-.7 .1-.6 .1-.5 .4-.5 .5-.3 .5-.2 .7-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1-2.1-2.8 .4-.2z"/><path class="wy-old" d="M40.8 50l.4-.2-4.1 0-4.2-12.5 2.5-1.7 4.3 .9 .6 1.9 .6-1.6 0-.3 2.4-7.8 0-.5 .1-.8 3.2-8.4 .4-.8 .6-.9 .9-1.2 .9-.9 1.3-.8 1.4-.6 1.2-.3 1.4-.1 1.3 .1 .6 .2 .8 .3 1.1 .6 .9 .7 .7 .9 .5 .9 .3 .9 .1 1.1-.1 .9-.3 .9-.4 .7-.6 .7-.6 .4-.6 .2-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.5-.1-.6-.2-.6-.3-.5-.4-.5-.5-.3-.6-.3-.7-.1-.6 0-.6 .1-.6 .3-.6 .5-.3 .4-.2 .5-.1 .5-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1zM49.6 17.1l.6 1.7-1.5 1.9 .4 .4 1.8-2.1-.7-2.1zM48.1 28.3l.5 1.8-1.7 1.8 .4 .4 1.9-2-.6-2.2zM37.9 41.7l1.7-1.5-.4-.4-1.7 1.4zM42.6 38.7l-1.5 2.8 1.1 2-1.3 2.6 .5 .2 1.5-2.8-1.1-2 1.4-2.5z"/></svg><span>wykonanie: <b>Wylinka</b></span></a></div>
+  </div>
+</footer>
+
+<div class="lb" id="lb" role="dialog" aria-label="Powiększone zdjęcie"><img alt=""><button class="x" aria-label="Zamknij">&times;</button><button class="p" aria-label="Poprzednie">&#8249;</button><button class="n" aria-label="Następne">&#8250;</button></div>
+
+<script>
+(function(){
+var top=document.querySelector('.top'),b=document.querySelector('.burger'),m=document.getElementById('menu');
+b.addEventListener('click',function(){var o=m.classList.toggle('on');top.classList.toggle('otw',o);b.setAttribute('aria-expanded',o)});
+m.addEventListener('click',function(e){if(e.target.tagName==='A'){m.classList.remove('on');top.classList.remove('otw');b.setAttribute('aria-expanded',false)}});
+// galeria: przeciaganie myszą + strzalki
+var t=document.getElementById('tasma'),d=false,sx=0,sl=0,ruch=0;
+t.addEventListener('mousedown',function(e){d=true;ruch=0;sx=e.pageX;sl=t.scrollLeft;t.classList.add('ciagnie')});
+window.addEventListener('mouseup',function(){d=false;t.classList.remove('ciagnie')});
+t.addEventListener('mousemove',function(e){if(!d)return;e.preventDefault();ruch=Math.abs(e.pageX-sx);t.scrollLeft=sl-(e.pageX-sx)});
+document.querySelectorAll('.strzalki button').forEach(function(x){x.addEventListener('click',function(){t.scrollBy({left:x.dataset.k*Math.min(t.clientWidth*.8,700),behavior:'smooth'})})});
+// powiekszenie
+var lb=document.getElementById('lb'),li=lb.querySelector('img'),zd=[].slice.call(t.querySelectorAll('button')),i=0;
+function pokaz(n){i=(n+zd.length)%zd.length;li.src=zd[i].dataset.duze;li.alt=zd[i].querySelector('img').alt;lb.classList.add('on')}
+zd.forEach(function(z,n){z.addEventListener('click',function(){if(ruch>6)return;pokaz(n)})});
+lb.querySelector('.x').onclick=function(){lb.classList.remove('on')};
+lb.querySelector('.p').onclick=function(){pokaz(i-1)};lb.querySelector('.n').onclick=function(){pokaz(i+1)};
+lb.addEventListener('click',function(e){if(e.target===lb)lb.classList.remove('on')});
+document.addEventListener('keydown',function(e){if(!lb.classList.contains('on'))return;if(e.key==='Escape')lb.classList.remove('on');if(e.key==='ArrowLeft')pokaz(i-1);if(e.key==='ArrowRight')pokaz(i+1)});
+var sx2=0;lb.addEventListener('touchstart',function(e){sx2=e.touches[0].clientX},{passive:true});
+lb.addEventListener('touchend',function(e){var dx=e.changedTouches[0].clientX-sx2;if(Math.abs(dx)>50)pokaz(i+(dx<0?1:-1))});
+// mapy Google ladowane przy przewinieciu
+var io=new IntersectionObserver(function(w){w.forEach(function(x){if(!x.isIntersecting)return;var el=x.target;el.innerHTML='<iframe loading="lazy" title="Mapa: '+el.dataset.mapa+'" src="https://maps.google.com/maps?q='+encodeURIComponent(el.dataset.mapa)+'&z=16&output=embed"></iframe>';io.unobserve(el)})},{rootMargin:'300px'});
+document.querySelectorAll('.mapa').forEach(function(x){io.observe(x)});
+// formularz pokazowy
+document.querySelectorAll('[data-temat]').forEach(function(a){a.addEventListener('click',function(){document.getElementById('temat').value=a.dataset.temat})});
+document.getElementById('formularz').addEventListener('submit',function(e){e.preventDefault();document.getElementById('info-ok').style.display='block'});
+})();
+</script>
+</body>
+</html>
